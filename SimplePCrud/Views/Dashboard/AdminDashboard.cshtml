@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Admin Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Admin Dashboard</h2>
+
+<div class="mt-4">
+
+    <a href="@Url.Action("ProductList", "Product")"
+       class="btn btn-primary">
+        Manage Products
+    </a>
+
+    <a href="@Url.Action("Logout", "Account")"
+       class="btn btn-danger">
+        Logout
+    </a>
+
+</div>
